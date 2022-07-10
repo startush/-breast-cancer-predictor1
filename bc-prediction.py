@@ -42,7 +42,7 @@ data['diagnosis'] = data['diagnosis'].map({'M':1,'B':0})
 
 ## Preparing data for the model
 prediction_var = ['texture_mean', 'perimeter_mean', 'smoothness_mean', 'compactness_mean']
-train, test = train_test_split(data, test_size = 0.3)
+train, test = train_test_split(data, test_size = 0.2)
 train_x = train[prediction_var]
 train_y = train.diagnosis
 
