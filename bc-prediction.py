@@ -14,7 +14,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn import metrics
 
 st.sidebar.header("""
-© Harvinder Power
 # Input Parameters""")
 
 classificationModel = st.sidebar.selectbox("Model", ["Random Forest Classifier", "GaussianNB", "K Nearest Neighbours", "Decision Tree Classifier"])
@@ -24,7 +23,7 @@ smoothness = st.sidebar.slider('Smoothness', 0.01, 0.18, 0.10)
 compactness = st.sidebar.slider('Compactness', 0.005, 0.400, 0.200)
 
 
-st.title('Breast Cancer Histology Prediction')
+st.title('Breast Cancer  Prediction')
 
 data = pd.read_csv('dataset.csv', header=0)
 
