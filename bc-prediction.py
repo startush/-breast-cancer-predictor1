@@ -97,3 +97,5 @@ color_function = {0: 'blue', 1: 'red'}
 colors = data['diagnosis'].map(lambda x: color_function.get(x))
 pd.plotting.scatter_matrix(data[features_mean], c=colors, alpha = 0.5, figsize = (15,15))
 st.pyplot()
+st.sidebar.subheader("ABOUT")
+st.sidebar.write('By: Tushar Sonkar')
