@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run bc-prediction.py
+web: sh setup.sh && streamlit run app.py
